@@ -1,0 +1,35 @@
+查看本地分支
+git branch
+查看本地加远程分支
+git branch -a
+切换分支
+git checkout <分支名>
+创建并切换分支
+git checkout -b <分支名>
+创建新分支并且同步指定远程代码
+git checkout -b v2.2dev origin/v2.2dev
+
+更新代码
+git pull
+git pull origin v2.4dev 更新指定分支
+查看状态
+git status
+比较代码
+git diff src/settings/settings_test.py
+提交代码
+git add .
+git commit -m 修改验证码风格
+git push
+git push origin v2.4dev 提交指定分支
+
+查看操作日志
+git log
+
+回滚代码
+$ git reset --hard HEAD^         回退到上个版本
+$ git reset --hard HEAD~3        回退到前3次提交之前，以此类推，回退到n次提交之前
+$ git reset --hard commit_id     退到/进到 指定commit的sha码，可以用sha码的前6个字符
+
+
+
+
